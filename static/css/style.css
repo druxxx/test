@@ -1,0 +1,104 @@
+html body {height:99%;}
+body{min-width:1000px;background:#f6f5f3;font-family: Tahoma;font-size:16px;color:#333;}
+table {border-spacing:0;border-collapse:collapse;}
+td, th {padding:0}
+a { color: #222; text-decoration: underline;}
+
+.main-container{width: 100%;background: #ffffff;height:100%;}
+header .login {float:left; background-color: #F5F5F5; margin: 20px; padding: 30px 10px; width: 215px;}
+
+
+/* forms */
+/** default **/
+div.field_container {min-height: 40px;}
+div.field_container .label {width: 135px; /* display: inline-block;*/ float: left;   vertical-align: top; text-align: right; margin-right: 5px;}
+div.field_container .label .required  {color: #ff0000;}
+div.field_container .field {display: inline-block;vertical-align: top; }
+div.field_container .error {color: red; font-size: 12px; width: auto; margin-top: 1px}
+div.field_container .error div {display: none;  width: 180px }
+
+div.field_container .tooltip {display: inline-block; vertical-align: top; padding: 0 5px;}
+div.form_default .left  {float: left}
+div.form_default .right {float: right}
+
+/** login **/
+div.form_login {width: 213px; font-size: 10px}
+div.form_login div.field_container .label {width: 60px}
+/** register **/
+div.form_register div.field_container .label {width: 170px}
+div.form_register div.field_container .field input[type=text],
+div.form_register div.field_container .field input[type=password] {width: 175px}
+div.form_register div.field_container .field input.captcha_field {height: 27px; width: 70px; margin-left: 5px; font-size: 18px;}
+div.form_register div.container_captcha {height: 50px;}
+div.form_register div.container_rules {height: 30px;}
+/**************************************************/
+input[type=text].error_input,
+input[type=password].error_input,
+select.error_input,
+textarea.error_input,
+input[type="checkbox"].error_input + label,
+input[type="radio"].error_input + label { border: 1px solid #f00; background: #ffffff;}
+
+
+/* modal windows */
+/*default settings modal*/
+.ui-widget-overlay {width:100%; height:100%; position:fixed; background-color:rgba(0,0,0,0.2); top:0; left:0; z-index:99;}
+.ui-dialog{background-color: #ffffff; color: #222222; position: absolute; top: 0; left: 0; outline: 0; z-index: 100;}
+.ui-dialog .ui-dialog-titlebar { background: url("../images/dialogs_tittle_bg.png"); height: 49px; color: #ffffff; position: relative;}
+.ui-dialog .ui-dialog-title { float: left; margin: 6px 15px; white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; font-size: 23px; position: relative;}
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 1.3em; top: 46%; width: 25px; margin: -10px 0 0 0; height: 25px; background:url(../images/dialogs_tittle_c_b.png); border: 0;}
+.ui-dialog .ui-dialog-titlebar-close span.ui-button-text { display: none;}
+.modal_body { position: relative; border: 0; background: none; overflow: auto; padding: 10px}
+/* enter cabinet */
+.modal_login .modal_body {width:230px; margin: 10px auto; background:#fff;}
+.modal_login #login_step2_container a{ display:block; width:275px; height:43px; float:left; text-align:center; padding:0 6px; border-radius:3px; line-height:43px; text-decoration:none; font-size:28px; position:relative; margin: 0px 0 20px 0 ; background: green;}
+/************************************************/
+.sAlert_bg{width:100%; height:100%; position:fixed; background-color:rgba(0,0,0,0.2); top:0; left:0; z-index:1599;}
+.sAlert {width: 300px; background-color:#ffffff; border-radius: 10px; position:fixed;top:42%; left:42%; z-index:1600; padding-bottom: 10px;  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);}
+.sAlert div:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px 0 0;
+}
+.sAlert div:nth-child(1) span{display: block; cursor: pointer; float: right; background: #ffffff; border-radius: 50%; width: 20px; height: 20px; font: bold 16px "Arial Black", Gadget, sans-serif; padding-left: 5px;}
+.sAlert div:nth-child(2) {width: 90%; margin: 5px 0 30px; text-align: center; font-size: 14px; padding: 0 20px}
+.sAlert div:nth-child(3) {cursor: pointer;     background: #f2b61c none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 16px;
+    color: #333;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    width: 45px;
+    margin: 0 auto}
+.sAlert div:nth-child(3):hover  {opacity:.8}
+.sAlert div:nth-child(3):active {opacity:.8}
+
+.btn_right {float: right; padding-right: 40px;}
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+/**************************************************************/
+
+.forum {width: 100%;}
+.forum th, .topic .title
+{
+    background: #acd6f7  repeat scroll 0 0;
+    border-bottom: 1px solid #5176b5;
+    color: #3a4f6c;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px;
+}
+.forum td { height: 55px; padding: 5px}
+.row1 { background: #d6e8ff none repeat scroll 0 0;}
+.row2 { background: #ddecff none repeat scroll 0 0;}
+.rowhighlight { background-color: #d6e8ff;}
+
+.topic .title {width: 100%}
+.post {width: 98%; min-height:70px;  background: #ddecff none repeat scroll 0 0; margin: 10px; padding: 10px;}
+.post .user {width: 100%;background-color: #d6e8ff;}

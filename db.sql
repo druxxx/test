@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS `accounts`;
+CREATE TABLE IF NOT EXISTS `accounts` (`id` int(4) NOT NULL AUTO_INCREMENT, `login` varchar(64) NOT NULL, `email` varchar(255) NOT NULL, `password` varchar(32) NOT NULL,`firstname` varchar(255) NOT NULL,`tstamp_added` int(4) NOT NULL,`last_login_tstamp` int(4) NOT NULL DEFAULT '0',`last_login_ip` int(4) unsigned NOT NULL DEFAULT '0',`ip_added` int(4) unsigned NOT NULL,`tstamp_updated` int(4) NOT NULL DEFAULT '0',`activation_str` varchar(32) DEFAULT NULL,`recovery_str` varchar(32) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE IF NOT EXISTS `posts` (`id` int(4) NOT NULL AUTO_INCREMENT,`topic_id` int(4) NOT NULL,`user_id` int(4) NOT NULL,`message` text NOT NULL,`tstamp_added` int(4) NOT NULL,`tstamp_updated` int(4) NOT NULL DEFAULT '0',`f_main` tinyint(1) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `topic_id` (`topic_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `topics`;
+CREATE TABLE IF NOT EXISTS `topics` (`id` int(4) NOT NULL AUTO_INCREMENT,`user_id` int(4) NOT NULL,`title` varchar(255) NOT NULL,`tstamp_added` int(4) NOT NULL,`tstamp_updated` int(4) NOT NULL,PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;

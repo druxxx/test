@@ -1,0 +1,30 @@
+<?
+	define('DB_HOST','[DB_HOST]');
+	define('DB_USER','[DB_LOGIN]');
+	define('DB_PASSWORD','[DB_PASSWORD]');
+	define('DB_NAME','[DB_NAME]');
+	define('DB_PREFIX','');
+
+	DEFINE('DEBUG',TRUE);
+
+
+	    define('WEBSITE',"[WEBSITE]");
+	define('GLOBAL_URL',"[DOMAIN]".WEBSITE);
+
+	DEFINE('GLOBAL_DIR',dirname(__FILE__));
+	DEFINE('APP_DIR',GLOBAL_DIR.'/_app/');
+	DEFINE('PATH_LOGS',GLOBAL_DIR.'/_logs/');
+	DEFINE('PATH_CACHE',GLOBAL_DIR.'/../_cache/');
+	DEFINE('CRON_CACHE_DIR',GLOBAL_DIR.'/_cron_cache/');
+
+	DEFINE('TEMPLATES_DIR',GLOBAL_DIR."/templates/");
+
+	DEFINE('IMAGES_URL',WEBSITE."/static/images/");
+	DEFINE('CSS_URL',WEBSITE."/static/css/");
+	DEFINE('JS_URL',WEBSITE."/static/js/");
+
+    DEFINE('EMAIL_SUPPORT',"support@local.com");
+
+	DEFINE("COOKIES_PREF", "tf_"); // Префекс к кукам
+
+?>
