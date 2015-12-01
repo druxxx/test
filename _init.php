@@ -23,7 +23,7 @@ DEFINE("IS_LOGIN",$cAuth->is_login);
 
 
 require "_app/_includes/dialogs_config.php";
-
+///git
 
 $g_controllers_list = array(
     "Main",

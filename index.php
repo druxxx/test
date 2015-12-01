@@ -8,7 +8,7 @@ if(is_file(dirname(__FILE__).'/install.php'))
 {
     echo '<span style="color: red;">Удалите install.php</span>';
 }
-
+//test!!git
 
 require "_init.php";
 $g_controllers_list = array_flip($g_controllers_list);
